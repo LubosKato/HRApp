@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b44cc0f4-5714-4479-960c-f2aac7eb8bb4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/HRServiceApp/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="46a716e2-0b1d-4be7-b693-010b1c29213e" SourceId="1" SourceUrl="http://localhost:8733/HRServiceApp/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="3026ef43-bcf5-46b7-bd1a-078b831354e1" SourceId="1" SourceUrl="http://localhost:8733/HRServiceApp/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="ad0dc745-1f0b-4fcc-8676-1fcf39167ed2" SourceId="1" SourceUrl="http://localhost:8733/HRServiceApp/?xsd=xsd1" />
+    <MetadataFile FileName="HRService.wsdl" MetadataType="Wsdl" ID="86484bee-7b20-4877-8cc1-21f47db22db6" SourceId="1" SourceUrl="http://localhost:8733/HRServiceApp/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="a8455d49-f77f-431b-92fb-44bf830947e1" SourceId="1" SourceUrl="http://localhost:8733/HRServiceApp/?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

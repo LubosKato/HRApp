@@ -1,0 +1,56 @@
+﻿@model HRWebClient.Models.HRModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HR application</title>
+   <link type="text/css" href="http://ajax.microsoft.com/ajax/jquery.ui/1.8.5/themes/blitzer/jquery-ui.css" rel="Stylesheet" />        
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.4.4.js"></script>  
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.6/jquery-ui.js"></script>
+          <script type="text/javascript">
+            $(function () {
+                $(".employees-container").accordion({
+                    header: ".content-title-container",
+                    autoHeight: false,
+                    collapsible: true,
+                    active: false
+                });
+                $(".employees-category-container").accordion({
+                    header: ".category-name",
+                    autoHeight: false,
+                    collapsible: true,
+                    active: false
+                });
+            });
+    </script>
+</head>
+<body>
+    <div class="employees-category-container">
+        @foreach (var item in Model.Supervisors)
+        {
+            <div class="content-title-container category-name">
+                <h3><a href="#">Supervisor: @item.Name</a></h3>
+            </div>
+                <div class="employees-container">
+                    @foreach (var employee in item.employees)
+                    {
+                        <div>
+                            <div class="content-title-container">
+                                <h3><a href="#">Employee: @employee.FirstName @employee.LastName</a></h3>
+                            </div>
+                            <fieldset>
+                                <p>Email: @Html.DisplayFor(modelItem => employee.EmailAddress)</p>
+                                <p>Salary: @Html.DisplayFor(modelItem => employee.Salary)</p>
+                            </fieldset>
+                        </div>
+                    }
+                </div>
+         }
+    </div>
+</body>
+</html>
